@@ -10,22 +10,21 @@ function getViewport() { //Returns size of viewport in pixels
 
 function resize() {
 	var currentWidth = getViewport().width;
-	console.log("Viewport width = " + currentWidth + "px");
-	if (currentWidth < document.getElementById("navigation-header").width) {
+	if (currentWidth < 1000) {
 		document.getElementById("navigation-header").style.left = '0px';
 		document.getElementById("navigation-header").style.marginLeft = '0px';
 
 		var i;
 		for (i = 0; i < document.getElementsByClassName("content").length; i++) {
-			document.getElementsByClassName("content")[i].style.paddingLeft = '0px';
-			document.getElementsByClassName("content")[i].style.paddingRight = '0px';
+			document.getElementsByClassName("content")[i].style.paddingLeft = '50px';
+			document.getElementsByClassName("content")[i].style.paddingRight = '50px';
 		}
 	}
 	else {
 		document.getElementById("navigation-header").style.left = '50%';
 		document.getElementById("navigation-header").style.marginLeft = '-500px';
 
-		var padding = (currentWidth - document.getElementById("navigation-header").width) / 2 + 50;
+		var padding = (currentWidth - 1000) / 2 + 50;
 		var i;
 		for (i = 0; i < document.getElementsByClassName("content").length; i++) {
 			document.getElementsByClassName("content")[i].style.paddingLeft = (padding + 'px');
@@ -36,13 +35,11 @@ function resize() {
 
 function scroll() {
 	var currentOffset = getScrollOffset().height;
-	console.log("Vertical scrolling offset: " + currentOffset);
-	console.log(document.getElementById("navigation-header-background").height);
-	if (document.getElementById("navigation-header-background").height - document.getElementById("navigation-row").height > currentOffset) {
-		document.getElementById("navigation-header-background").marginTop = 0 - currentOffset;
+	if (currentOffset < 150) {
+		document.getElementById("navigation-header-background").style.marginTop = ('-' + currentOffset + 'px');
 	}
 	else {
-		document.getElementById("navigation-header-background").marginTop = document.getElementById("navigation-row").height - document.getElementById("navigation-header-background").height;
+		document.getElementById("navigation-header-background").style.marginTop = '-150px';
 	}
 }
 
