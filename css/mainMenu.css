@@ -1,0 +1,56 @@
+html, body, #nagivation-header{
+	padding: 0;
+	margin: 0;
+}
+
+#navigation-header-background {
+	position: fixed;
+	width: 100%;
+	height: 200px;
+	background-color: black;
+}
+
+#navigation-header {
+	position: absolute;
+	left: 50%;
+	width: 1000px;
+	height: inherit;
+	margin-left: -500px;
+}
+
+.navigation-button, .navigation-button-right{
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 247px;
+	height: inherit;
+}
+
+.button-text{
+	height: inherit;
+	width: inherit;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.navigation-button {
+	border-right-style: solid;
+	border-right-color: red;
+	border-right-width: thin;
+}
+
+#navigation-row {
+	color: white;
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	margin: 0;
+}
+
+.content {
+	width: auto;
+	background-color: blue;
+	height: 10000px;
+	padding-top: 200px;
+}
