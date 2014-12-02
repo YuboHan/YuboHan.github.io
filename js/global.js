@@ -10,21 +10,26 @@ function getViewport() { //Returns size of viewport in pixels
 
 function resize() {
 	var currentWidth = getViewport().width;
-	if (currentWidth < 1000) {
+	var elementWidth = parseInt( window.getComputedStyle( document.getElementById("navigation-header") ).width );
+	var bodyPadding = 50;
+
+	if (currentWidth < elementWidth) {
+		console.log('hi');
 		document.getElementById("navigation-header").style.left = '0px';
 		document.getElementById("navigation-header").style.marginLeft = '0px';
 
 		var i;
 		for (i = 0; i < document.getElementsByClassName("content").length; i++) {
-			document.getElementsByClassName("content")[i].style.paddingLeft = '50px';
-			document.getElementsByClassName("content")[i].style.paddingRight = '50px';
+			document.getElementsByClassName("content")[i].style.paddingLeft = (bodyPadding + 'px');
+			document.getElementsByClassName("content")[i].style.paddingRight = (bodyPadding + 'px');
 		}
 	}
 	else {
+		console.log('bye');
 		document.getElementById("navigation-header").style.left = '50%';
-		document.getElementById("navigation-header").style.marginLeft = '-500px';
+		document.getElementById("navigation-header").style.marginLeft = ('-' + (elementWidth / 2) + 'px');
 
-		var padding = (currentWidth - 1000) / 2 + 50;
+		var padding = (currentWidth - elementWidth) / 2 + bodyPadding;
 		var i;
 		for (i = 0; i < document.getElementsByClassName("content").length; i++) {
 			document.getElementsByClassName("content")[i].style.paddingLeft = (padding + 'px');
@@ -35,11 +40,14 @@ function resize() {
 
 function scroll() {
 	var currentOffset = getScrollOffset().height;
-	if (currentOffset < 150) {
+	var navRowHeight = parseInt( window.getComputedStyle( document.getElementById("navigation-row")).height );
+	var headerHeight = parseInt( window.getComputedStyle( document.getElementById("navigation-header-background")).height );
+
+	if (currentOffset < headerHeight - navRowHeight) {
 		document.getElementById("navigation-header-background").style.marginTop = ('-' + currentOffset + 'px');
 	}
 	else {
-		document.getElementById("navigation-header-background").style.marginTop = '-150px';
+		document.getElementById("navigation-header-background").style.marginTop = (navRowHeight - headerHeight) + 'px';
 	}
 }
 
