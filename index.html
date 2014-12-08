@@ -28,19 +28,19 @@
 		$(document).ready(function(){
 			$(".wacky-text").hide();
 			$(".navigation-button").hide();
-			/*$("#block-one").fadeIn(1000).delay(1000).fadeOut(1000).queue(function() {
+			$("#block-one").fadeIn(1000).delay(1000).fadeOut(1000).queue(function() {
 				$("#block-two").fadeIn(1000).delay(2000).fadeOut(1000).queue(function() {
-					$("#block-three").fadeIn(1000).delay(2000).fadeOut(1000).queue(function() {*/
+					$("#block-three").fadeIn(1000).delay(2000).fadeOut(1000).queue(function() {
 						$("#block-four").fadeIn(1000);
 						$(".navigation-button").fadeIn(1000);
 						$(".navigation-button").hover(function(){
-							$(this).css("background-color", "rgba(255, 255, 255, 0.05)");
+							$(this).css("background-color", "rgba(255, 255, 255, 0.1)");
 						}, function(){
 							$(this).css("background-color", "rgba(0, 0, 0, 0)");
 						});
-					/*});
+					});
 				});
-			});*/
+			});
 		});
 	</script>
 
@@ -50,13 +50,13 @@
 		<p class="wacky-text" id="block-three">...and a developer.</p>
 		<p class="wacky-text" id="block-four" style="padding-top:50px">Where would you like to go?</p>
 		<div class="buffer col-sm-0 col-md-2"></div>
-		<a href="about-me.html"><div class="navigation-button col-sm-6 col-md-4" id="about-me-button">About me</div></a>
-		<a href="projects.html"><div class="navigation-button col-sm-6 col-md-4" id="projects-button">Projects</div></a>
+		<a href="../about-me"><div class="navigation-button col-sm-6 col-md-4" id="about-me-button">About me</div></a>
+		<a href="../projects"><div class="navigation-button col-sm-6 col-md-4" id="projects-button">Projects</div></a>
 		<div class="buffer col-sm-0 col-md-2"></div>
 		<div class="clearfix"></div>
 		<div class="buffer col-sm-0 col-md-2"></div>
-		<a href="portfolio.html"><div class="navigation-button col-sm-6 col-md-4" id="portfolio-button">Portfolio</div></a>
-		<a href="contact-me.html"><div class="navigation-button col-sm-6 col-md-4" id="contact-me-button">Contact me</div></a>
+		<a href="../portfolio"><div class="navigation-button col-sm-6 col-md-4" id="portfolio-button">Portfolio</div></a>
+		<a href="../contact-me"><div class="navigation-button col-sm-6 col-md-4" id="contact-me-button">Contact me</div></a>
 		<div class="buffer col-sm-0 col-md-2"></div>
 	</div>
 
