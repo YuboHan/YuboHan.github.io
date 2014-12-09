@@ -19,6 +19,10 @@
 			}, function(){
 				$(this).css("background-color", "rgba(0, 0, 0, 0)");
 			});
+
+			$("#dropdown").click(function(){
+				$(".dropdownMenu").toggle();
+			});
 		});
 	</script>
 	<header class="navigation-header">
@@ -33,17 +37,23 @@
 				<a href="../contact-me"><div class="header-button col-sm-3" id="contact-me">CONTACT ME</div></a>
 			</div>
 		</div>
-		<div class="col-xs-6 hidden-sm hidden-md hidden-lg"id="dropdown">
+		<div class="col-xs-6 hidden-sm hidden-md hidden-lg" id="dropdown">
 			<img src="http://placehold.it/40x40" style="float:right">
 		</div>
-
 	</header>
+	<div class="dropdownMenu hidden-sm hidden-md hidden-lg">
+		<div class="current-header-button col-xs-3" id="about-me">ABOUT ME</div>
+		<a href="../projects"><div class="header-button col-xs-3" id="projects">PROJECTS</div></a>
+		<a href="../portfolio"><div class="header-button col-xs-3" id="portfolio">PORTFOLIO</div></a>
+		<a href="../contact-me"><div class="header-button col-xs-3" id="contact-me">CONTACT ME</div></a>
+	</div>
+
 	<div style="height:2000px;background-color:#CCCCCC">
-		<div class="container">
+		<!--div class="container">
 			<div class="hidden-xs col-sm-1 col-md-2"></div>
-			<div class="content-block col-xs-12 col-sm-10 col-md-8">Just some text</div>
+			<div class="content-block col-xs-12 col-sm-10 col-md-8"></div>
 			<div class="hidden-xs col-sm-1 col-md-2"></div>
-		</div
+		</div-->
 	</div>
 </body>
 </html>

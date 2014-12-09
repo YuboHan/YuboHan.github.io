@@ -47,6 +47,15 @@
 	z-index: 1;
 }
 
+.dropdownMenu {
+	position: fixed;
+	width: 100%;
+	background-color: #606060;
+	opacity: 0.85;
+	z-index: 1;
+	margin-top: 73px;
+}
+
 .header-name {
 	color: white;
 	font-family: 'timeBurner';
