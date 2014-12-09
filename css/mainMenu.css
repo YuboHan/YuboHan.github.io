@@ -44,6 +44,7 @@
 	background-size: 100% 100%;
 	opacity: 0.85;
 	filter: alpha(opacity=85);
+	z-index: 1;
 }
 
 .header-name {
@@ -70,4 +71,10 @@
 	float: right;
 	padding-top: 16px;
 	padding-bottom: 16px;
+}
+
+.content-block {
+	background-color: white;
+	margin-top: 50px;
+	height: 500px;
 }
