@@ -33,14 +33,30 @@
 	function adjustNavBar() {
 		if ( $(window).width() > 1183 ) {
 			$("#navigation").css("left", "88.16568%");
+			$("#navigation").css("right", "auto");
 		} else {
-			$("#navigation").css("left", "0");
+			$("#navigation").css("left", "auto");
+			$("#navigation").css("right", "0px");
+		}
+	}
+
+	function adjustWelcomePage() {
+		console.log($(window).width());
+		if ( $(window).width() > 1183 ) {
+			$("#welcome-name").css("margin-left","-550px");
+			$("#welcome-menu").css("margin-left","150px");
+		} else if ( $(window).width() > 974 ){
+			$("#welcome-name").css("margin-left","-375px");
+			$("#welcome-menu").css("margin-left","-25px");
+		} else {
+			$("#welcome-name").css("margin-left","-200px");
 		}
 	}
 
 	$(function(){
 		getYPosOfDivs();
 		adjustNavBar();
+		adjustWelcomePage();
 
 		$(".welcome-menu-button-text").hover(function() {
 			$(this).css("color", "red");
@@ -82,6 +98,7 @@
 		$(window).on("resize", function(event){
 			getYPosOfDivs();
 			adjustNavBar();
+			adjustWelcomePage();
 		});
 
 		$(window).scroll(function() {
