@@ -1,0 +1,162 @@
+@font-face {
+	font-family: lucy;
+	src: url(../libs/font/Lucy.ttf);
+}
+
+@font-face {
+	font-family: timeburner;
+	src: url(../libs/font/timeburner_regular.ttf);
+}
+
+@font-face {
+	font-family: BebasNeue;
+	src: url(../libs/font/BebasNeue.otf);
+}
+
+@font-face {
+	font-family: Delius;
+	src: url(../libs/font/Delius-regular.ttf);
+}
+
+.circle {
+	text-align: center;
+	background-color: white;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+}
+.welcome-menu-button {
+    border-bottom-style: dotted;
+    border-width: 1px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.navigation-block {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-family: BebasNeue;
+	font-weight: lighter;
+	font-size: 22px;
+}
+
+#welcome-page {
+	background-image: url("../libs/images/pen_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; width: 100%;
+}
+
+#welcome-name {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -550px;
+}
+
+#welcome-circle-name {
+	background-color: #FF704D;
+	opacity: 0.9;
+	color: white;
+	font-size: 100px;
+	font-family: Delius;
+	font-weight: bold;
+}
+
+#welcome-description {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -200px;
+}
+
+#welcome-circle-description {
+	font-family: BebasNeue;
+	color: #3D1F00;
+	font-size: 40px;
+	background-color: #FDF8F6;
+	opacity: 0.9;
+}
+
+#welcome-circle-menu {
+	font-family: BebasNeue;
+	color: #3D1F00;
+	font-size: 30px;
+	font-weight: lighter;
+	background-color: #FDF8F6;
+	opacity: 0.9;
+}
+
+#welcome-menu {
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: 150px;
+}
+
+#about-me {
+	background-color: gray;
+	height: 1000px;
+}
+
+#skills {
+	background-color: white;
+	height: 1000px;
+}
+
+#experiences {
+	background-color: gray;
+	height: 1000px;
+}
+
+#projects {
+	background-color:white;
+	height: 1000px;
+}
+
+#contact-me {
+	background-color: black;
+	font-color: white;
+	height: 1000px;
+}
+
+#navigation {
+	position: absolute;
+	top: 100%;
+	background-color: #222222;
+	opacity: 0.9;
+	width: 140px;
+}
+
+body {
+	margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;
+	padding: 0;
+	width: 100%;
+}
+
+html {
+	width: 100%
+	height: 100%;
+}
+
+ul {
+	margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;
+	padding: 0;
+	list-style-type: none;
+}
+
+a, a:hover, a:link, a:visited {
+    text-decoration: none;
+}
