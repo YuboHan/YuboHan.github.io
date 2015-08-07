@@ -15,7 +15,7 @@
 
 @font-face {
 	font-family: Delius;
-	src: url(../libs/font/Delius-regular.ttf);
+	src: url(../libs/font/Delius-Regular.ttf);
 }
 
 .circle {
@@ -46,7 +46,7 @@
 	color: white;
 	font-family: BebasNeue;
 	font-weight: lighter;
-	font-size: 22px;
+	font-size: 18px;
 }
 
 #welcome-page {
@@ -137,7 +137,8 @@
 	top: 100%;
 	background-color: #222222;
 	opacity: 0.9;
-	width: 140px;
+	width: 120px;
+	border-radius: 10px;
 }
 
 body {
