@@ -19,6 +19,10 @@
 	padding-bottom: 80px;
 }
 
+#about-profile-picture {
+	width: 100%;
+}
+
 .about-body-container {
 	text-align:right;
 	padding-top: 50px;
