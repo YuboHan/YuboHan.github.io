@@ -36,12 +36,11 @@
 			$("#navigation").css("right", "auto");
 		} else {
 			$("#navigation").css("left", "auto");
-			$("#navigation").css("right", "0px");
+			$("#navigation").css("right", "20px");
 		}
 	}
 
 	function adjustWelcomePage() {
-		console.log($(window).width());
 		if ( $(window).width() > 1183 ) {
 			$("#welcome-name").css("margin-left","-550px");
 			$("#welcome-menu").css("margin-left","150px");
@@ -105,6 +104,17 @@
 			/* TODO: Right now if we remove this, there will be an error if you refresh page too much*/
 			getYPosOfDivs();
 			scrollYPos = $(document).scrollTop();
+			if (scrollYPos < welcomePageHeight) {
+				$("#dropdown").css({
+					'position':'absolute',
+					'top':'100%'
+				});
+			} else {
+				$("#dropdown").css({
+					'position':'fixed',
+					'top':'0%'
+				});
+			}
 			if (scrollYPos < welcomePageHeight - 50) {
 				$("#navigation").css({
 					'position':'absolute',
@@ -116,14 +126,6 @@
 					'top':'50px'
 				});
 			}
-			/*console.log("skillsPos: "+skillsPos);
-			console.log();
-			console.log();
-			console.log();
-			console.log();
-			console.log();
-			console.log();
-			console.log("scrollYPos" + scrollYPos);*/
 			if (scrollYPos < skillsPos - $(window).height() * 0.3) {
 				resetNavigationBar();
 				$("#navigation-about-me").css("background-color", "#FF704D");
