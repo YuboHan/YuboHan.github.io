@@ -2,13 +2,13 @@
 	background-color: #333333;
 	color: #D6D6D6;
 	font-family: helvetica;
-	font-size: 18px;
 	height: auto;
 }
 
 #about-title {
 	width: 100%;
 	background-color: #303030;
+	font-weight: bold;
 	text-align: center;
 	padding-top: 120px;
 	padding-bottom: 60px;
@@ -20,7 +20,7 @@
 }
 
 #about-profile-picture {
-	width: 100%;
+	width: 300px;
 }
 
 .about-sub-title {
@@ -31,12 +31,4 @@
 
 .about-details-title {
 	 color: #6E6E6E;
-}
-
-.about-body-container {
-	line-height: 150%;
-	padding-top: 100px;
-	border-top-style: solid;
-	border-width: 1px;
-	font-size: 16px;
 }

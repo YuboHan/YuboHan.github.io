@@ -38,6 +38,15 @@
     padding-top: 10px;
 }
 
+.body-container {
+	line-height: 150%;
+	padding-top: 100px;
+	border-top-style: solid;
+	border-width: 1px;
+	font-size: 16px;
+}
+
+
 .navigation-block {
 	padding-top: 30px;
 	padding-bottom: 30px;

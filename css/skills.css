@@ -1,4 +1,21 @@
 #skills {
-	background-color: white;
-	height: 1000px;
+	background-color: #F5F5F5;
+	font-family: helvetica;
+	height: auto;
+}
+
+#skills-title {
+	width: 100%;
+	background-color: #F1F1F1;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 120px;
+	padding-bottom: 60px;
+	font-size: 60px;
+}
+
+.skills-container {
+	width: 100%;
+	font-size: 20px;
+	padding-bottom: 40px;
 }

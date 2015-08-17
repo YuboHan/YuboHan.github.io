@@ -95,6 +95,7 @@
 		});
 
 		$(window).on("resize", function(event){
+			console.log($(window).width());
 			getYPosOfDivs();
 			adjustNavBar();
 			adjustWelcomePage();
