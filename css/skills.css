@@ -15,7 +15,23 @@
 }
 
 .skills-container {
-	width: 100%;
+	padding-left: 100px;
+	padding-right: 100px;
 	font-size: 20px;
-	padding-bottom: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.skills-stars {
+	width: 120px;
+}
+
+.skills-stars-container {
+	text-align: right;
+}
+
+.skills-sub-title {
+	color: #FF704D;
+	text-align: center;
+	font-size: 24px;
 }
