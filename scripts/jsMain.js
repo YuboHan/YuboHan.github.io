@@ -50,11 +50,21 @@
 			$("#welcome-name").css("margin-left", "-200px");
 		}
 	}
+    
+    function adjustAboutInfoBackground() {
+        var background = $("#about-info-box-background");
+        background.css("top", $("#about-info-box").position().top);
+        background.css("left", $("#about-info-box").position().left);
+        background.css("height", $("#about-info-box").outerHeight());
+        background.css("width", $("#about-info-box").outerWidth());
+        background.css("margin-top", $("#about-info-box").css("margin-top"));
+    }
 
 	$(function () {
 		getYPosOfDivs();
 		adjustNavBar();
 		adjustWelcomePage();
+        adjustAboutInfoBackground();
 
 		$(".welcome-menu-button-text").hover(function () {
 			$(this).css("color", "#B4D235");
@@ -67,6 +77,12 @@
 		}, function () {
 			$(this).css("color", "white");
 		});
+        
+        $("#about-info-box").hover(function () {
+            $("#about-me-background").fadeTo("fast", 0.2);
+        }, function () {
+            $("#about-me-background").fadeTo("fast", 1);
+        });
 
 		$(".welcome-about-me").click(function (e) {
             e.preventDefault();
@@ -98,6 +114,7 @@
 			getYPosOfDivs();
 			adjustNavBar();
 			adjustWelcomePage();
+            adjustAboutInfoBackground();
 		});
 
 		$(window).scroll(function () {
@@ -118,12 +135,12 @@
 			if (scrollYPos < welcomePageHeight - 50) {
 				$("#navigation").css({
 					'position': 'absolute',
-					'top': '100%',
+					'top': '100%'
 				});
 			} else {
 				$("#navigation").css({
 					'position': 'fixed',
-					'top': '50px',
+					'top': '50px'
                     
 				});
 			}

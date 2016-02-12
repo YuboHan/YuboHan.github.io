@@ -1,34 +1,44 @@
 #about-me {
-	background-color: #333333;
-	color: #D6D6D6;
+	background-color: black;
 	font-family: helvetica;
 	height: auto;
+/*
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+    ), url("../libs/images/profile_pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; */
+    width: 100%;
+    padding: 0px;
+}
+
+#about-me-background {
+    position: absolute;
+    width: 100%;
 }
 
 #about-title {
+	color: #1a1a1a;
 	width: 100%;
-	background-color: #303030;
 	font-weight: bold;
 	text-align: center;
-	padding-top: 120px;
-	padding-bottom: 60px;
+	padding-top: 50px;
 	font-size: 60px;
+    opacity: 1;
 }
 
-#about-body {
-	padding-bottom: 100px;
+#about-info-box {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-#about-profile-picture {
-	width: 300px;
-}
-
-.about-sub-title {
-	color: #FF704D;
-	font-size: 24px;
-	padding-bottom: 20px;
-}
-
-.about-details-title {
-	 color: #6E6E6E;
+#about-info-box-background {
+    background: white;
+    opacity: 0.6;
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
 }
