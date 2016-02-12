@@ -38,6 +38,10 @@
     padding-top: 10px;
 }
 
+.welcome-menu-button-text {
+    color: whitesmoke;
+}
+
 .body-container {
 	line-height: 150%;
 	padding-top: 100px;
@@ -52,14 +56,13 @@
 	padding-bottom: 30px;
 	width: 100%;
 	text-align: center;
-	color: white;
 	font-family: BebasNeue;
 	font-weight: lighter;
 	font-size: 18px;
 }
 
 #welcome-page {
-	background-image: url("../libs/images/pen_background.jpg");
+	background-image: url("../libs/images/circuit-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh; width: 100%;
@@ -74,12 +77,12 @@
 }
 
 #welcome-circle-name {
-	background-color: #FF704D;
+	background-color: #B4D235;
 	opacity: 0.9;
 	color: white;
 	font-size: 100px;
-	font-family: Delius;
-	font-weight: bold;
+	font-family: BebasNeue;
+	font-weight: lighter;
 }
 
 #welcome-description {
@@ -93,18 +96,20 @@
 #welcome-circle-description {
 	font-family: BebasNeue;
 	color: #3D1F00;
+    color: black;
 	font-size: 40px;
-	background-color: #FDF8F6;
-	/*background-color:#E2AAC6;*/
-	opacity: 0.9;
+/*	background-color: #FDF8F6;*/
+    background-color: white;
+/*	background-color:#E2AAC6;*/
+/*	opacity: 0.9;*/
 }
 
 #welcome-circle-menu {
 	font-family: BebasNeue;
-	color: #3D1F00;
+	color: white;
 	font-size: 30px;
 	font-weight: lighter;
-	background-color: #FDF8F6;
+	background-color: black;
 	/*background-color: #93C4C4;*/
 	opacity: 0.9;
 }
@@ -136,9 +141,9 @@
 #navigation {
 	position: absolute;
 	top: 100%;
-	background-color: #222222;
-	opacity: 0.9;
+	background-color: #4d4e4f;
 	width: 120px;
+    opacity: 0.9;
 	border-radius: 10px;
 	z-index: 2;
 }
