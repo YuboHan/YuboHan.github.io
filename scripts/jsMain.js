@@ -59,10 +59,11 @@
         background.css("width", $("#about-info-box").outerWidth());
         background.css("margin-top", $("#about-info-box").css("margin-top"));
         
-        console.log("background top");
-        console.log(background.offset().top);
-        console.log("about-body top");
-        console.log($("#about-body").offset().top);
+        // This is necessary because if this function is executed before load, the background may be incorrect
+        // This is a hack and should be fixed
+        if (background.offset().top === $("#about-body").offset().top) {
+            adjustAboutInfoBackground();
+        }
     }
 
 	$(function () {
