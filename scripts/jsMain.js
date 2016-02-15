@@ -59,6 +59,7 @@
         background.css("height", $("#about-info-box").outerHeight());
         background.css("width", $("#about-info-box").outerWidth());
         background.css("margin-top", $("#about-info-box").css("margin-top"));
+        if (background.css("top") == $("about-body").css("top")) adjustAboutInfoBackground();
     }
 
 	$(function () {
