@@ -53,16 +53,13 @@
     
     function adjustAboutInfoBackground() {
         var background = $("#about-info-box-background");
-        background.css("top", $("#about-info-box").position().top);
-        background.css("left", $("#about-info-box").position().left);
-        background.css("height", $("#about-info-box").outerHeight());
-        background.css("width", $("#about-info-box").outerWidth());
-        background.css("margin-top", $("#about-info-box").css("margin-top"));
         
-        // This is necessary because if this function is executed before load, the background may be incorrect
-        // This is a hack and should be fixed
-        if (background.offset().top === $("#about-body").offset().top) {
-            adjustAboutInfoBackground();
+        while (background.offset().top === $("#about-body").offset().top) {
+            background.css("top", $("#about-info-box").position().top);
+            background.css("left", $("#about-info-box").position().left);
+            background.css("height", $("#about-info-box").outerHeight());
+            background.css("width", $("#about-info-box").outerWidth());
+            background.css("margin-top", $("#about-info-box").css("margin-top"));
         }
     }
 

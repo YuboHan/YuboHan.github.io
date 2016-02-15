@@ -1,17 +1,17 @@
 #skills {
 	background-color: #F5F5F5;
-	font-family: helvetica;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 26px;
 	height: auto;
 }
 
 #skills-title {
+	color: #1a1a1a;
 	width: 100%;
-	background-color: #F1F1F1;
 	font-weight: bold;
 	text-align: center;
-	padding-top: 120px;
-	padding-bottom: 60px;
 	font-size: 60px;
+    padding-top: 120px;
 }
 
 .skills-container {
