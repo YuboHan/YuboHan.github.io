@@ -59,6 +59,12 @@
         background.css("height", $("#about-info-box").outerHeight());
         background.css("width", $("#about-info-box").outerWidth());
         background.css("margin-top", $("#about-info-box").css("margin-top"));
+        
+        console.log("background top");
+        console.log(background.css("top"));
+        console.log("about-body top");
+        console.log($("about-body").css("top"));
+        
         if (background.css("top") == $("about-body").css("top")) adjustAboutInfoBackground();
     }
 
