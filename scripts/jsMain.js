@@ -52,7 +52,6 @@
 	}
     
     function adjustAboutInfoBackground() {
-        console.log("hello");
         var background = $("#about-info-box-background");
         background.css("top", $("#about-info-box").position().top);
         background.css("left", $("#about-info-box").position().left);
