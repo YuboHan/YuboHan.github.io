@@ -1,3 +1,8 @@
+#about-body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 26px;
+}
+
 #about-me {
 	background-color: black;
 	font-family: helvetica;
@@ -24,7 +29,6 @@
 	width: 100%;
 	font-weight: bold;
 	text-align: center;
-	padding-top: 50px;
 	font-size: 60px;
     opacity: 1;
 }
@@ -32,11 +36,16 @@
 #about-info-box {
     margin-top: 100px;
     margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: left;
 }
 
 #about-info-box-background {
     background: white;
-    opacity: 0.6;
+    opacity: 0.8;
     border-radius: 20px;
     height: 100px;
     width: 100px;
