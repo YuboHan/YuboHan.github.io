@@ -121,6 +121,7 @@
 
 		$(window).scroll(function () {
 			/* TODO: Right now if we remove this, there will be an error if you refresh page too much*/
+            adjustAboutInfoBackground();
 			getYPosOfDivs();
 			scrollYPos = $(document).scrollTop();
 			if (scrollYPos < welcomePageHeight) {
