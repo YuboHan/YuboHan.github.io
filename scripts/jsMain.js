@@ -60,11 +60,9 @@
         background.css("margin-top", $("#about-info-box").css("margin-top"));
         
         console.log("background top");
-        console.log(background.css("top"));
+        console.log(background.offset().top);
         console.log("about-body top");
-        console.log($("about-body").css("top"));
-        
-        if (background.css("top") == $("about-body").css("top")) adjustAboutInfoBackground();
+        console.log($("#about-body").offset().top);
     }
 
 	$(function () {
