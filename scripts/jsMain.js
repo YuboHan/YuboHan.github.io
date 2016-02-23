@@ -110,8 +110,16 @@
             e.preventDefault();
             $("#contact-me").scrollintoview({ duration: "normal"});
 		});
+        
+        $("#skills-la-select-text").click(function (e) {
+            if ($("#skills-la-select").css("background-color") !== "transparent") {
+                $("#skills-la-select").css("background-color", "transparent");
+            } else {
+                $("#skills-la-select").css("background-color", "black");
+            }
+        });
 
-		$(window).on("resize", function (event) {
+		$(window).on("resize", function (e) {
 			console.log($(window).width());
 			getYPosOfDivs();
 			adjustNavBar();

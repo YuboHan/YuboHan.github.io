@@ -1,5 +1,8 @@
 #skills {
 	background-color: #F5F5F5;
+    background-image: url("../libs/images/background-blue.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 	font-family: 'Source Sans Pro', sans-serif;
     font-size: 26px;
 	height: auto;
@@ -23,16 +26,87 @@
 	padding-bottom: 20px;
 }
 
-.skills-stars {
-	width: 120px;
-}
-
-.skills-stars-container {
-	text-align: right;
-}
-
-.skills-sub-title {
-	color: #FF704D;
+.skills-legend {
+	color: white;
 	text-align: center;
 	font-size: 24px;
+    width: 24%;
+    margin: 0.5%;
+    height: 80px;
+    float: left;
+    border-radius: 50px;
+    display: table;
+}
+
+.skills-legend-text {
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+
+
+/*Skill categories*/
+#skills-la-select { /*Programming languages*/
+    background-color: black;
+}
+
+#skills-hw-select { /*Hardware*/
+    
+}
+
+#skills-ta-select { /*Testing APIs*/
+    
+}
+
+#skills-ci-select { /*Continuous Build Integrations*/
+    
+}
+
+#skills-wd-select { /*Web design*/
+    
+}
+
+#skills-dt-select { /*Development tools*/
+    
+}
+
+#skills-os-select { /*Operating Systems*/
+    
+}
+
+#skills-mc-select { /*Misc.*/
+    
+}
+
+.skills-la { /*Programming languages*/
+    
+}
+
+.skills-hw { /*Hardware*/
+    
+}
+
+.skills-ta { /*Testing APIs*/
+    
+}
+
+.skills-ci { /*Continuous Build Integrations*/
+    
+}
+
+.skills-wd { /*Web design*/
+    
+}
+
+.skills-dt { /*Development tools*/
+    
+}
+
+.skills-os { /*Operating Systems*/
+    
+}
+
+.skills-mc { /*Misc.*/
+    
 }

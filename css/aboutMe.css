@@ -1,6 +1,9 @@
 #about-body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 26px;
+    background-image: url("../libs/images/profile_pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #about-me {
