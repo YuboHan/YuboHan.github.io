@@ -12,6 +12,8 @@
 		<script src="API/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script-->
 		<script type="text/javascript" src="scripts/jquery.scrollintoview.js"></script>
 		<script type="text/javascript" src="scripts/jsMain.js"></script>
+        <script src="scripts/ng-main.js"></script>
+        
 		<link rel="stylesheet" type="text/css" href="css/main.css"></link>
 		<link rel="stylesheet" type="text/css" href="css/aboutMe.css"></link>
 		<link rel="stylesheet" type="text/css" href="css/skills.css"></link>
@@ -30,7 +32,7 @@
 	</head>
 
 	<body>
-        <div ng-app="">
+        <div ng-app="myWebsite">
             <div class="hidden-xs hidden-sm" id="navigation">
                 <div class="navigation-block" id="navigation-about-me" style="border-top-left-radius:10px;border-top-right-radius:10px"><a href class="navigation-block-text welcome-about-me" style="color:white">About Me</a></div>
                 <div class="navigation-block" id="navigation-skills"><a href class="navigation-block-text welcome-skills" style="color:white">Skills</a></div>
@@ -91,26 +93,27 @@
                 </div>
             </div>
 
-            <div class="col-xs-12" id="skills">
+            <div class="col-xs-12" id="skills" ng-controller="skillsCtrl">
+                <div>La Child State:{{laChildState}}</div>
                 <div id="skills-title">Skills</div>
                 <div style="text-align:center;padding-bottom:20px"><img class="section-break" src="libs/images/section_break.png"></div>
 
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
                     <div style="margin-bottom:200px">
-                        <div class="skills-legend" id="skills-la-select"><div class="skills-legend-text">languages</div></div>
-                        <div class="skills-legend" id="skills-hw-select"><div class="skills-legend-text">hardware</div></div>
-                        <div class="skills-legend" id="skills-ta-select"><div class="skills-legend-text">testing</div></div>
-                        <div class="skills-legend" id="skills-ci-select"><div class="skills-legend-text">build integration</div></div>
-                        <div class="skills-legend" id="skills-wd-select"><div class="skills-legend-text">web design</div></div>
-                        <div class="skills-legend" id="skills-dt-select"><div class="skills-legend-text">development tools</div></div>
-                        <div class="skills-legend" id="skills-os-select"><div class="skills-legend-text">operating systems</div></div>
-                        <div class="skills-legend" id="skills-mc-select"><div class="skills-legend-text">misc.</div></div>
+                        <div class="skills-legend" id="skills-la-select" ng-click="laState=(laState==black)?transparent:black" ng-style="laState"><div class="skills-legend-text">languages</div></div>
+                        <div class="skills-legend" id="skills-hw-select" ng-click="hwState=(hwState==black)?transparent:black" ng-style="hwState"><div class="skills-legend-text">hardware</div></div>
+                        <div class="skills-legend" id="skills-ta-select" ng-click="taState=(taState==black)?transparent:black" ng-style="taState"><div class="skills-legend-text">testing</div></div>
+                        <div class="skills-legend" id="skills-ci-select" ng-click="ciState=(ciState==black)?transparent:black" ng-style="ciState"><div class="skills-legend-text">build integration</div></div>
+                        <div class="skills-legend" id="skills-wd-select" ng-click="wdState=(wdState==black)?transparent:black" ng-style="wdState"><div class="skills-legend-text">web design</div></div>
+                        <div class="skills-legend" id="skills-dt-select" ng-click="dtState=(dtState==black)?transparent:black" ng-style="dtState"><div class="skills-legend-text">development tools</div></div>
+                        <div class="skills-legend" id="skills-os-select" ng-click="osState=(osState==black)?transparent:black" ng-style="osState"><div class="skills-legend-text">operating systems</div></div>
+                        <div class="skills-legend" id="skills-mc-select" ng-click="mcState=(mcState==black)?transparent:black" ng-style="mcState"><div class="skills-legend-text">misc.</div></div>
                     </div>
 
                     <ul class="hexagon-wrapper">
                         <!--Programming languages-->
-                        <li><div><img src="libs/images/logos/C.png" alt=""/><h1>C</h1></div></li>
+                        <li ng-style="laChildState"><div><img src="libs/images/logos/C.png" alt=""/><h1>C</h1></div></li>
                         <li><div><img src="libs/images/logos/C++.png" alt=""/><h1>C++</h1></div></li>
     <!--
                         <li><div><img src="libs/images/logos/matlab.png" alt=""/><h1>Matlab</h1></div></li>
