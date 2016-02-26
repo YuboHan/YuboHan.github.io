@@ -14,11 +14,12 @@
 		<script type="text/javascript" src="scripts/jsMain.js"></script>
         <script src="scripts/ng-main.js"></script>
         
-		<link rel="stylesheet" type="text/css" href="css/main.css"></link>
-		<link rel="stylesheet" type="text/css" href="css/aboutMe.css"></link>
-		<link rel="stylesheet" type="text/css" href="css/skills.css"></link>
-        <link rel="stylesheet" type="text/css" href="css/hexagon.css"></link>
-        <link rel="stylesheet" type="text/css" href="css/newHex.css"></link>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/aboutMe.css">
+        <link rel="stylesheet" type="text/css" href="css/skills.css">
+        <link rel="stylesheet" type="text/css" href="css/hexagon.css">
+        <link rel="stylesheet" type="text/css" href="css/newHex.css">
+        <link rel="stylesheet" type="text/css" href="css/experiences.css">
 
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
         <!--font-family: 'Source Sans Pro', sans-serif;-->
@@ -79,114 +80,67 @@
                         <p>When I'm not staring at a computer screen, I enjoy playing the piano, badminton, anime, breakfast, lunch, and dinner.</p>
                     </div>
                     <div class="col-lg-2"></div>
-                    <!--div>
-                        <div class="about-sub-title">Details</div>
-                        <div><strong class="about-details-title">Name:</strong></div>
-                        <div> Yubo Han</div>
-                        <div><strong class="about-details-title">Location:</strong></div>
-                        <div> Waterloo, Canada.</div>
-                        <div><strong class="about-details-title">E-mail:</strong></div>
-                        <div> hanyubo95@gmail.com</div>
-                    </div>
-                    <div class="col-md-1 body-container"></div>
-                    <div class="hidden-md hidden-sm- hidden-xs col-lg-1"></div-->
                 </div>
             </div>
 
             <div class="col-xs-12" id="skills" ng-controller="skillsCtrl">
-                <div>La Child State:{{laChildState}}</div>
-                <div id="skills-title">Skills</div>
+                <div class="section-title">Skills</div>
                 <div style="text-align:center;padding-bottom:20px"><img class="section-break" src="libs/images/section_break.png"></div>
 
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
                     <div style="margin-bottom:200px">
-                        <div class="skills-legend" id="skills-la-select" ng-click="laState=(laState==black)?transparent:black" ng-style="laState"><div class="skills-legend-text">languages</div></div>
-                        <div class="skills-legend" id="skills-hw-select" ng-click="hwState=(hwState==black)?transparent:black" ng-style="hwState"><div class="skills-legend-text">hardware</div></div>
-                        <div class="skills-legend" id="skills-ta-select" ng-click="taState=(taState==black)?transparent:black" ng-style="taState"><div class="skills-legend-text">testing</div></div>
-                        <div class="skills-legend" id="skills-ci-select" ng-click="ciState=(ciState==black)?transparent:black" ng-style="ciState"><div class="skills-legend-text">build integration</div></div>
-                        <div class="skills-legend" id="skills-wd-select" ng-click="wdState=(wdState==black)?transparent:black" ng-style="wdState"><div class="skills-legend-text">web design</div></div>
-                        <div class="skills-legend" id="skills-dt-select" ng-click="dtState=(dtState==black)?transparent:black" ng-style="dtState"><div class="skills-legend-text">development tools</div></div>
-                        <div class="skills-legend" id="skills-os-select" ng-click="osState=(osState==black)?transparent:black" ng-style="osState"><div class="skills-legend-text">operating systems</div></div>
-                        <div class="skills-legend" id="skills-mc-select" ng-click="mcState=(mcState==black)?transparent:black" ng-style="mcState"><div class="skills-legend-text">misc.</div></div>
+                        <div class="skills-legend" id="skills-la-select" ng-click="state.la=(state.la==black)?transparent:black" ng-style="state.la"><div class="skills-legend-text">languages</div></div>
+                        <div class="skills-legend" id="skills-hw-select" ng-click="state.hw=(state.hw==black)?transparent:black" ng-style="state.hw"><div class="skills-legend-text">hardware</div></div>
+                        <div class="skills-legend" id="skills-ta-select" ng-click="state.ta=(state.ta==black)?transparent:black" ng-style="state.ta"><div class="skills-legend-text">testing</div></div>
+                        <div class="skills-legend" id="skills-ci-select" ng-click="state.ci=(state.ci==black)?transparent:black" ng-style="state.ci"><div class="skills-legend-text">build integration</div></div>
+                        <div class="skills-legend" id="skills-wd-select" ng-click="state.wd=(state.wd==black)?transparent:black" ng-style="state.wd"><div class="skills-legend-text">web design</div></div>
+                        <div class="skills-legend" id="skills-dt-select" ng-click="state.dt=(state.dt==black)?transparent:black" ng-style="state.dt"><div class="skills-legend-text">development tools</div></div>
+                        <div class="skills-legend" id="skills-os-select" ng-click="state.os=(state.os==black)?transparent:black" ng-style="state.os"><div class="skills-legend-text">operating systems</div></div>
+                        <div class="skills-legend" id="skills-mc-select" ng-click="state.mc=(state.mc==black)?transparent:black" ng-style="state.mc"><div class="skills-legend-text">misc.</div></div>
                     </div>
 
                     <ul class="hexagon-wrapper">
                         <!--Programming languages-->
-                        <li ng-style="laChildState"><div><img src="libs/images/logos/C.png" alt=""/><h1>C</h1></div></li>
-                        <li><div><img src="libs/images/logos/C++.png" alt=""/><h1>C++</h1></div></li>
-    <!--
-                        <li><div><img src="libs/images/logos/matlab.png" alt=""/><h1>Matlab</h1></div></li>
-                        <li><div><img src="libs/images/logos/javascript.png" alt=""/><h1>Javascript</h1></div></li>
-                        <li><div><img src="libs/images/logos/python.png" alt=""/><h1>Python</h1></div></li>
-    -->
-
-                        <!--Hardware-->
-    <!--
-                        <li><div><img src="libs/images/logos/armArch.png" alt=""/><h1>ARM Architecture Chipset</h1></div></li>
-                        <li><div><img src="libs/images/logos/armAssembly.png" alt=""/><h1>ARM Assembly</h1></div></li>
-                        <li><div><img src="libs/images/logos/broadcom.png" alt=""/><h1>Broadcom architecture</h1></div></li>
-                        <li><div><img src="libs/images/logos/vhdl.png" alt=""/><h1>VHDL</h1></div></li>
-    -->
-
-                        <!--Testing APIs-->
-    <!--
-                        <li><div><img src="libs/images/logos/googletest.png" alt=""/><h1>Google Test</h1></div></li>
-                        <li><div><img src="libs/images/logos/robotframework.png" alt=""/><h1>Robot Framework</h1></div></li>
-                        <li><div><img src="libs/images/logos/sikuli.png" alt=""/><h1>Sikuli</h1></div></li>
-    -->
-
-                        <!--Continuous Build Integration-->
-    <!--
-                        <li><div><img src="libs/images/logos/jenkins" alt=""/><h1>Jenkins</h1></div></li>
-                        <li><div><img src="libs/images/logos/teamcity" alt=""/><h1>Teamcity</h1></div></li>
-    -->
-
-                        <!--Web design-->
-    <!--
-                        <li><div><img src="libs/images/logos/html.png" alt=""/><h1>HTML</h1></div></li>
-                        <li><div><img src="libs/images/logos/css.png" alt=""/><h1>CSS</h1></div></li>
-                        <li><div><img src="libs/images/logos/angularJS.png" alt=""/><h1>AngularJS</h1></div></li>
-                        <li><div><img src="libs/images/logos/jQuery.png" alt=""/><h1>jQuery</h1></div></li>
-                        <li><div><img src="libs/images/logos/apacheWebServer.png" alt=""/><h1>Apache HTTP Server</h1></div></li>
-    -->
-
-                        <!--Development Tools-->
-    <!--
-                        <li><div><img src="libs/images/logos/visualStudio.png" alt=""/><h1>Visual Studio</h1></div></li>
-                        <li><div><img src="libs/images/logos/brackets.png" alt=""/><h1>Brackets</h1></div></li>
-    -->
-
-                        <!--Operating Systems-->
-    <!--
-                        <li><div><img src="libs/images/logos/ubuntu.png" alt=""/><h1>Ubuntu</h1></div></li>
-                        <li><div><img src="libs/images/logos/windows.png" alt=""/><h1>Windows</h1></div></li>
-    -->
-
-                        <!--Misc-->
-
+                        <li ng-style="childState.wd"><div><img src="libs/images/logos/angularJS.png" alt=""/><h1>AngularJS</h1></div></li>
+                        <li ng-style="childState.wd"><div><img src="libs/images/logos/apacheWebServer.png" alt=""/><h1>Apache HTTP Server</h1></div></li>
+                        <li ng-style="childState.hw"><div><img src="libs/images/logos/armArch.png" alt=""/><h1>ARM Architecture Chipset</h1></div></li>
+                        <li ng-style="childState.hw"><div><img src="libs/images/logos/armAssembly.png" alt=""/><h1>ARM Assembly</h1></div></li>
+                        <li ng-style="childState.dt"><div><img src="libs/images/logos/brackets.png" alt=""/><h1>Brackets</h1></div></li>
+                        <li ng-style="childState.hw"><div><img src="libs/images/logos/broadcom.png" alt=""/><h1>Broadcom architecture</h1></div></li>
+                        <li ng-style="childState.la"><div><img src="libs/images/logos/C.png" alt=""/><h1>C</h1></div></li>
+                        <li ng-style="childState.la"><div><img src="libs/images/logos/C++.png" alt=""/><h1>C++</h1></div></li>
+                        <li ng-style="childState.wd"><div><img src="libs/images/logos/css.png" alt=""/><h1>CSS</h1></div></li>
+                        <li ng-style="childState.ta"><div><img src="libs/images/logos/googletest.png" alt=""/><h1>Google Test</h1></div></li>
+                        <li ng-style="childState.wd"><div><img src="libs/images/logos/html.png" alt=""/><h1>HTML</h1></div></li>
+                        <li ng-style="childState.la"><div><img src="libs/images/logos/javascript.png" alt=""/><h1>Javascript</h1></div></li>
+                        <li ng-style="childState.ci"><div><img src="libs/images/logos/jenkins" alt=""/><h1>Jenkins</h1></div></li>
+                        <li ng-style="childState.wd"><div><img src="libs/images/logos/jQuery.png" alt=""/><h1>jQuery</h1></div></li>
+                        <li ng-style="childState.la"><div><img src="libs/images/logos/matlab.png" alt=""/><h1>Matlab</h1></div></li>
+                        <li ng-style="childState.la"><div><img src="libs/images/logos/python.png" alt=""/><h1>Python</h1></div></li>
+                        <li ng-style="childState.ta"><div><img src="libs/images/logos/robotframework.png" alt=""/><h1>Robot Framework</h1></div></li>
+                        <li ng-style="childState.ta"><div><img src="libs/images/logos/sikuli.png" alt=""/><h1>Sikuli</h1></div></li>
+                        <li ng-style="childState.ci"><div><img src="libs/images/logos/teamcity" alt=""/><h1>Teamcity</h1></div></li>
+                        <li ng-style="childState.os"><div><img src="libs/images/logos/ubuntu.png" alt=""/><h1>Ubuntu</h1></div></li>
+                        <li ng-style="childState.hw"><div><img src="libs/images/logos/vhdl.png" alt=""/><h1>VHDL</h1></div></li>
+                        <li ng-style="childState.dt"><div><img src="libs/images/logos/visualStudio.png" alt=""/><h1>Visual Studio</h1></div></li>
+                        <li ng-style="childState.os"><div><img src="libs/images/logos/windows.png" alt=""/><h1>Windows</h1></div></li>
                     </ul>
-
-                    <div class="skills-sub-title"></div>
-
-
-                    <!--li><div><img src="libs/images/logos/html.png" alt=""/><h1>HTML</h1></div></li>
-                        <li><div><img src="libs/images/logos/googletest.png" alt=""/><h1>GoogleTest</h1></div></li>
-                        <li><div><img src="libs/images/logos/robotframework.png" alt=""/><h1>Robot Framework</h1></div></li>
-                    </ul>
-    -->
-
-
-
-
-
-
                 </div>
                 <div class="col-lg-2"></div>
             </div>
 
             <div class="col-xs-12" id="experiences">
-                My experiences
+                <div class="section-title">Experiences</div>
+                <div style="text-align:center;padding-bottom:20px"><img class="section-break" src="libs/images/section_break.png"></div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="experience-job">this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text </div>
+                    <div class="experience-job"></div>
+                    <div class="experience-job"></div>
+                    <div class="experience-job"></div>
+                </div>
+                <div class="col-lg-2"></div>
             </div>
 
             <div class="col-xs-12" id="projects">
