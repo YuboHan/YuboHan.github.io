@@ -111,6 +111,11 @@
             $("#contact-me").scrollintoview({ duration: "normal"});
 		});
         
+        $(".experience-job>img").click(function (e) {
+            e.preventDefault();
+            $("#experience-description").scrollintoview({ duration: "normal"});
+		});
+        
         $("#skills-la-select-text").click(function (e) {
             if ($("#skills-la-select").css("background-color") !== "transparent") {
                 $("#skills-la-select").css("background-color", "transparent");

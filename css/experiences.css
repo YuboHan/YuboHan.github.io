@@ -7,10 +7,12 @@
 
 .experience-job {
     position: relative;
-    background-color: red;
     float: left;
     width: 50%;
-    margin-right: 10%;
-    height: 500px;
-    auto;
+    padding: 10%;
+}
+
+.experience-job > img {
+    width: 100%;
+    cursor: pointer;
 }

@@ -10,7 +10,7 @@ app.controller("skillsCtrl", function ($scope) {
     $scope.transparent = {'background-color': 'transparent'};
     
     $scope.solid = {'opacity': 1};
-    $scope.faded = {'opacity': 0.2};
+    $scope.faded = {'opacity': 0};
     
     $scope.state = {'la': $scope.black, 'hw': $scope.black, 'ta': $scope.black, 'ci': $scope.black, 'wd': $scope.black, 'dt': $scope.black, 'os': $scope.black, 'mc': $scope.black};
     

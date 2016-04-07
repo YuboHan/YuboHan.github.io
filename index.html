@@ -130,17 +130,23 @@
                 <div class="col-lg-2"></div>
             </div>
 
-            <div class="col-xs-12" id="experiences">
+            <div class="col-xs-12" id="experiences" ng-init="experienceSelector=0">
                 <div class="section-title">Experiences</div>
                 <div style="text-align:center;padding-bottom:20px"><img class="section-break" src="libs/images/section_break.png"></div>
                 <div class="col-lg-2"></div>
                 <div class="col-lg-8">
-                    <div class="experience-job">this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text this is some text </div>
-                    <div class="experience-job"></div>
-                    <div class="experience-job"></div>
-                    <div class="experience-job"></div>
+                    <div class="experience-job"><img ng-click="experienceSelector=1" href="./.experience-description" src="https://placehold.it/350x350"></div>
+                    <div class="experience-job"><img ng-click="experienceSelector=2" src="https://placehold.it/200x200"></div>
+                    <div class="experience-job"><img ng-click="experienceSelector=3" src="https://placehold.it/50x50"></div>
+                    <div class="experience-job"><img ng-click="experienceSelector=4" src="https://placehold.it/100x100"></div>
                 </div>
                 <div class="col-lg-2"></div>
+                <div class="col-xs-12" id="experience-description">
+                    <div ng-show="experienceSelector===1">Div 1</div>
+                    <div ng-show="experienceSelector===2">Div 2</div>
+                    <div ng-show="experienceSelector===3">Div 3</div>
+                    <div ng-show="experienceSelector===4">Div 4</div>
+                </div>
             </div>
 
             <div class="col-xs-12" id="projects">
